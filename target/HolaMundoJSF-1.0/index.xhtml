@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+    <title>Hola mundo jsf</title>
+</head>
+<body>
+<h:form>
+    <table>
+        <tr>
+            <td>
+                <h:outputLabel for="nombre" value="Nombre:"></h:outputLabel>
+            </td>
+            <td>
+                <h:inputText id="nombre" value="#{candidato.nombre}"></h:inputText>
+            </td>
+            <td>
+                <h:message for="nombre"></h:message>
+            </td>
+        </tr>
+    </table>
+    <h:commandButton action="#{vacanteForm.enviar}" value="Enviar"/>
+</h:form>
+</body>
+</html>
